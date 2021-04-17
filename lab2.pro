@@ -10,6 +10,7 @@ CONFIG -= app_bundle
 SOURCES += \
         classunit.cpp \
         cppfactory.cpp \
+        cppmethod.cpp \
         cppunit.cpp \
         ifactory.cpp \
         main.cpp \
@@ -25,6 +26,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
     classunit.h \
     cppfactory.h \
+    cppmethod.h \
     cppunit.h \
     ifactory.h \
     methodunit.h \

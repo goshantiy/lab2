@@ -1,7 +1,8 @@
 #ifndef PRINTOPERATORUNIT_H
 #define PRINTOPERATORUNIT_H
 #include "unit.h"
-class PrintOperatorUnit : public Unit {
+class PrintOperatorUnit : public Unit
+{
 public:
     explicit PrintOperatorUnit( const std::string& text );
 
