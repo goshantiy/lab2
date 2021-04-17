@@ -15,7 +15,8 @@ public:
 public:
     explicit ClassUnit( const std::string& name );
     void add(const std::shared_ptr<Unit>& unit, Flags flags);
-    std::string compile(unsigned int level = 0) const;
+    virtual std::string compile(unsigned int level = 0) const=0;
+    virtual ~ClassUnit()=default;
 protected:
     std::string m_name;
     using Fields = std::vector<std::shared_ptr<Unit>>;
