@@ -28,7 +28,6 @@ world!\n)" ) );
 }
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
-
+       std::cout<<generateProgram()<<std::endl;
     return 0;
 }
