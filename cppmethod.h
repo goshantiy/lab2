@@ -6,7 +6,7 @@ class CppMethod: public MethodUnit
 {
 public:
     CppMethod(const std::string& name, const std::string& returnType, Flags flags );
-    std::string compile( unsigned int level) const override;
+    std::string compile( unsigned int level) const;
 };
 
 #endif // CPPMETHOD_H

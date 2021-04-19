@@ -11,6 +11,7 @@ SOURCES += \
         classunit.cpp \
         cppfactory.cpp \
         cppmethod.cpp \
+        cppprint.cpp \
         cppunit.cpp \
         ifactory.cpp \
         main.cpp \
@@ -27,6 +28,7 @@ HEADERS += \
     classunit.h \
     cppfactory.h \
     cppmethod.h \
+    cppprint.h \
     cppunit.h \
     ifactory.h \
     methodunit.h \
