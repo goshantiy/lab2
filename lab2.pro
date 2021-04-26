@@ -17,6 +17,10 @@ SOURCES += \
         main.cpp \
         methodunit.cpp \
         printoperatorunit.cpp \
+        sharpfactory.cpp \
+        sharpmethod.cpp \
+        sharpprint.cpp \
+        sharpunit.cpp \
         unit.cpp
 
 # Default rules for deployment.
@@ -33,4 +37,8 @@ HEADERS += \
     ifactory.h \
     methodunit.h \
     printoperatorunit.h \
+    sharpfactory.h \
+    sharpmethod.h \
+    sharpprint.h \
+    sharpunit.h \
     unit.h

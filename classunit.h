@@ -9,7 +9,10 @@ public:
     {
         PUBLIC,
         PROTECTED,
-        PRIVATE
+        PRIVATE,
+        INTERNAL,
+        PRIVATE_PROTECTED,
+        PROTECTED_INTERNAL
     };
     static const std::vector<std::string> ACCESS_MODIFIERS;
 public:

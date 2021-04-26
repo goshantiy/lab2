@@ -1,5 +1,5 @@
 #include "classunit.h"
-const std::vector< std::string > ClassUnit::ACCESS_MODIFIERS = { "public","protected", "private" };
+const std::vector< std::string > ClassUnit::ACCESS_MODIFIERS = { "public","protected", "private" , "internal" , "private protected" , "protected internal" };
 ClassUnit::ClassUnit( const std::string& name ) : m_name( name )
 {
        m_fields.resize( ACCESS_MODIFIERS.size() );
