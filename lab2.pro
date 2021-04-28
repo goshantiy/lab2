@@ -14,6 +14,10 @@ SOURCES += \
         cppprint.cpp \
         cppunit.cpp \
         ifactory.cpp \
+        javafactory.cpp \
+        javamethod.cpp \
+        javaprint.cpp \
+        javaunit.cpp \
         main.cpp \
         methodunit.cpp \
         printoperatorunit.cpp \
@@ -35,6 +39,10 @@ HEADERS += \
     cppprint.h \
     cppunit.h \
     ifactory.h \
+    javafactory.h \
+    javamethod.h \
+    javaprint.h \
+    javaunit.h \
     methodunit.h \
     printoperatorunit.h \
     sharpfactory.h \
