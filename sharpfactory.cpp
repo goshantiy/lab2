@@ -5,9 +5,9 @@
 SharpFactory::SharpFactory()
 {
 }
-std::shared_ptr<ClassUnit> SharpFactory::createClassUnit(const std::string& name)
+std::shared_ptr<ClassUnit> SharpFactory::createClassUnit(const std::string& name,Flags type)
 {
-    return std::make_shared<SharpUnit>(name);
+    return std::make_shared<SharpUnit>(name,type);
 }
 
 std::shared_ptr<MethodUnit> SharpFactory::createMethodUnit(const std::string& name, const std::string& returnType, Flags flags)

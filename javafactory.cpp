@@ -5,9 +5,9 @@
 JavaFactory::JavaFactory()
 {
 }
-std::shared_ptr<ClassUnit> JavaFactory::createClassUnit(const std::string& name)
+std::shared_ptr<ClassUnit> JavaFactory::createClassUnit(const std::string& name,Flags type)
 {
-    return std::make_shared<JavaUnit>(name);
+    return std::make_shared<JavaUnit>(name,type);
 }
 
 std::shared_ptr<MethodUnit> JavaFactory::createMethodUnit(const std::string& name, const std::string& returnType, Flags flags)

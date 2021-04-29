@@ -5,9 +5,9 @@
 CppFactory::CppFactory()
 {
 }
-std::shared_ptr<ClassUnit> CppFactory::createClassUnit(const std::string& name)
+std::shared_ptr<ClassUnit> CppFactory::createClassUnit(const std::string& name,Flags type)
 {
-    return std::make_shared<CppUnit>(name);
+     return std::make_shared<CppUnit>(name);
 }
 
 std::shared_ptr<MethodUnit> CppFactory::createMethodUnit(const std::string& name, const std::string& returnType, Flags flags)

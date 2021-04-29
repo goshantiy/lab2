@@ -16,7 +16,7 @@ std::string JavaMethod::compile( unsigned int level) const {
     }
     else if( m_flags & ABSTRACT )
     {
-        result+="abstact";
+        result+="abstact ";
     }
 
     result += m_returnType + " ";
