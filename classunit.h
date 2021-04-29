@@ -8,8 +8,8 @@ public:
     enum AccessModifier
     {
         PUBLIC,
-        PROTECTED ,
-        PRIVATE ,
+        PROTECTED,
+        PRIVATE,
         INTERNAL,
         PRIVATE_PROTECTED,
         PROTECTED_INTERNAL
