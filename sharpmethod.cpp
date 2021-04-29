@@ -9,6 +9,8 @@ std::string SharpMethod::compile( unsigned int level) const {
 
     if( m_flags & STATIC ) {
         result += "static ";
+    }else if( m_flags & VIRTUAL ) {
+        result += "virtual ";
     }
 
     result += m_returnType + " ";

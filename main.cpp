@@ -6,7 +6,7 @@
 #include "cppfactory.h"
 #include "sharpfactory.h"
 #include "javafactory.h"
-#include "javaunit.h"
+
 
 
 //std::string generateProgram()
@@ -22,7 +22,7 @@
 //}
 std::string generateProgram(IFactory* ifactory)
 {
-    auto myClass = ifactory->createClassUnit("myClass", JavaUnit::PRIVATE);
+    auto myClass = ifactory->createClassUnit("myClass", ClassUnit::PRIVATE);
     myClass->add(ifactory->createMethodUnit("testFunc1", "void", 0), ClassUnit::PUBLIC);
     myClass->add(ifactory->createMethodUnit("testFunc2", "void",MethodUnit::STATIC), ClassUnit::PRIVATE);
     myClass->add(ifactory->createMethodUnit("testFunc3", "void",MethodUnit::VIRTUAL | MethodUnit::CONST),ClassUnit::PUBLIC);
