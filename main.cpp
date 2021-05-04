@@ -22,7 +22,7 @@
 //}
 std::string generateProgram(IFactory* ifactory)
 {
-    auto myClass = ifactory->createClassUnit("myClass", ClassUnit::PROTECTED);
+    auto myClass = ifactory->createClassUnit("myClass", ClassUnit::PRIVATE|ClassUnit::ABSTRACT);
     myClass->add(ifactory->createMethodUnit("testFunc1", "void", 0), ClassUnit::PUBLIC);
     myClass->add(ifactory->createMethodUnit("testFunc2", "void",MethodUnit::STATIC), ClassUnit::PRIVATE);
     myClass->add(ifactory->createMethodUnit("testFunc3", "void",MethodUnit::VIRTUAL | MethodUnit::CONST),ClassUnit::PUBLIC);
