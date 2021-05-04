@@ -22,7 +22,7 @@
 //}
 std::string generateProgram(IFactory* ifactory)
 {
-    auto myClass = ifactory->createClassUnit("myClass", ClassUnit::PRIVATE);
+    auto myClass = ifactory->createClassUnit("myClass", ClassUnit::PROTECTED);
     myClass->add(ifactory->createMethodUnit("testFunc1", "void", 0), ClassUnit::PUBLIC);
     myClass->add(ifactory->createMethodUnit("testFunc2", "void",MethodUnit::STATIC), ClassUnit::PRIVATE);
     myClass->add(ifactory->createMethodUnit("testFunc3", "void",MethodUnit::VIRTUAL | MethodUnit::CONST),ClassUnit::PUBLIC);
@@ -31,7 +31,7 @@ std::string generateProgram(IFactory* ifactory)
     auto method=ifactory->createMethodUnit("testFunc4","void", MethodUnit::STATIC);
     myClass->add(ifactory->createMethodUnit("testFunc7", "void",MethodUnit::ABSTRACT), ClassUnit::PRIVATE);
     method->add(ifactory->createPrintOperatorUnit(R"(Hello,world!\n)"));
-    myClass->add( method, ClassUnit::PROTECTED );
+    myClass->add(method, ClassUnit::PROTECTED);
     return myClass->compile();
 }
 int main(int argc, char *argv[])

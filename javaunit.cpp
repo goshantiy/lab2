@@ -6,15 +6,24 @@ JavaUnit::JavaUnit(const std::string& name,Flags type) : ClassUnit(name), Type(t
 std::string JavaUnit::compile(unsigned int level) const
 {
     std::string result="";
-    if( Type & PUBLIC ) {
+    if( Type == PUBLIC ) {
         result += "public ";
     }else
-    if( Type & PRIVATE ) {
-        result += "private ";
-    }else
-    if( Type & PROTECTED ) {
+    if( Type == PROTECTED ) {
         result += "protected ";
+    }else
+    if( Type == PRIVATE ) {
+        result += "private ";
     }
+    if( Type == FINAL ) {
+        result += "final ";
+    }else
+    if( Type == ABSTRACT ) {
+        result += "abstract ";
+    }
+
+
+
     result += generateShift(level) + "class " + m_name + " {\n";
 
     for(size_t i = 0; i < 3; ++i) {

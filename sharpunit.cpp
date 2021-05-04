@@ -8,13 +8,13 @@ SharpUnit::SharpUnit(const std::string& name, Flags type) : ClassUnit(name), Typ
 std::string SharpUnit::compile(unsigned int level) const
 {
     std::string result="";
-    if( Type & PUBLIC ) {
+    if( Type == PUBLIC ) {
         result += "public ";
     }else
-    if( Type & PRIVATE ) {
+    if( Type == PRIVATE ) {
         result += "private ";
     }else
-    if( Type & PROTECTED ) {
+    if( Type == PROTECTED ) {
         result += "protected ";
     }
     result += generateShift(level) + "class " + m_name + " {\n";

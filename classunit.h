@@ -12,7 +12,9 @@ public:
         PRIVATE,
         INTERNAL,
         PRIVATE_PROTECTED,
-        PROTECTED_INTERNAL
+        PROTECTED_INTERNAL,
+        FINAL,
+        ABSTRACT
     };
     static const std::vector<std::string> ACCESS_MODIFIERS;
 public:
