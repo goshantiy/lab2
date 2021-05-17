@@ -10,11 +10,9 @@ public:
         PUBLIC=1,
         PROTECTED=1<<1,
         PRIVATE=1<<2,
-        INTERNAL=1<<3,
-        PRIVATE_PROTECTED=1<<4,
-        PROTECTED_INTERNAL=1<<5,
-        FINAL=1<<6,
-        ABSTRACT=1<<7
+        INTERNAL=1<<4,
+        PRIVATE_PROTECTED=1<<3,
+        PROTECTED_INTERNAL=1<<5
     };
     static const std::vector<std::string> ACCESS_MODIFIERS;
 public:

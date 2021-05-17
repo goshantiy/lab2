@@ -1,6 +1,7 @@
 #ifndef JAVAUNIT_H
 #define JAVAUNIT_H
 #include <classunit.h>
+#include <methodunit.h>
 
 class JavaUnit: public ClassUnit
 {

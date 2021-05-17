@@ -15,23 +15,16 @@ std::string JavaUnit::compile(unsigned int level) const
     if( Type & PRIVATE ) {
         result += "private ";
     }
-    if( Type & FINAL ) {
-        result += "final ";
-    }else
-    if( Type & ABSTRACT ) {
-        result += "abstract ";
-    }
-
-
 
     result += generateShift(level) + "class " + m_name + " {\n";
 
-    for(size_t i = 0; i < 3; ++i) {
+    for(size_t i = 0; i < 4; ++i) {
         if(m_fields[1<<i].empty()) {
             continue;
         }
-        result += ACCESS_MODIFIERS[i] + ":\n";
+
         for(const auto& f : m_fields[1<<i]) {
+            result += ACCESS_MODIFIERS[i] + "";
             result += f->compile(level + 1);
         }
         result += "\n";
